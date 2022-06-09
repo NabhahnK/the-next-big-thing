@@ -1,14 +1,14 @@
 .main {
+    text-align: center;
     display: flex;
     margin: 20px auto;
     height: 100px;
     width: 100%;
+  
 }
 
-.hero-is-primary {
-
-
-
-}
-
-
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
