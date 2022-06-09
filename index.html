@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Cat Corner</title>
@@ -22,7 +23,7 @@
 
                 <p>Enter a search term to find books about cats.</p>
 
-                <input class="input" type="text" placeholder="Pirates/Kingdoms/SpaceShip">
+                <input id="text-input" class="input" type="text" placeholder="Pirates/Kingdoms/SpaceShip">
 
                 <div class="field is-grouped">
 
@@ -74,10 +75,10 @@
 
     <main>
 
-        <img href="https://via.placeholder.com/150">
+        <img id="cat-img" href="https://via.placeholder.com/150">
 
         <p>
-            test3<a id="bookLink" href="#">boo</a>
+            Click this link to see your random <a id="bookLink" href="#">cat and keyword book.</a>
         </p>
 
     </main>
