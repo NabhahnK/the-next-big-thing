@@ -5,7 +5,9 @@ var keyWord = document.getElementById("text-input");
 var submitBtn = document.getElementById("submit-btn");
 
 function saveKeyWord() {
+    if (keyWord.value != "") {
     localStorage.setItem("term", keyWord.value);
+    }
 }
 
 modalBtn.addEventListener("click", function() {
