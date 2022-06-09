@@ -1,7 +1,14 @@
-header {
-height: 100px;
-width: 100%;
+.main {
+    display: flex;
+    margin: 20px auto;
+    height: 100px;
+    width: 100%;
+}
+
+.hero-is-primary {
 
 
 
 }
+
+
