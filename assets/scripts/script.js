@@ -4,9 +4,15 @@ var apiUrl = 'https://cataas.com/cat'
 var keyWord = document.getElementById("text-input");
 var submitBtn = document.getElementById("submit-btn");
 
+function setText() {
+    if (localStorage.length != 0) {
+    }
+}
+
 function saveKeyWord() {
     if (keyWord.value != "") {
     localStorage.setItem("term", keyWord.value);
+    setText();
     }
 }
 
