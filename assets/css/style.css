@@ -1,11 +1,11 @@
-.main {
-    text-align: center;
-    display: flex;
-    margin: 20px auto;
-    height: 100px;
-    width: 100%;
-  
+* body {
+    height: 100vh;
+    background-color: blueviolet;
 }
+
+header {
+height: 100px;
+width: 100%;
 
 body {
     position: relative;
