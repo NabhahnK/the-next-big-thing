@@ -7,4 +7,6 @@ modalBtn.addEventListener("click", function() {
     modalActive.classList.remove("is-active");
 });
 
+submitBtn.addEventListener("click", );
+
 fetch ("")
