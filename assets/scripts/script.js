@@ -20,13 +20,13 @@ modalBtn.addEventListener("click", function () {
     modalActive.classList.remove("is-active");
 });
 
-function getapi(apiUrl)
-responce = fetch(apiUrl)
-var data = responce.json();
-console.log(data);
+// function getapi(apiUrl)
+//     responce = fetch(apiUrl)
+//     var data = responce.json();
+//     console.log(data);
 
 
-getapi(apiUrl);
+//     getapi(apiUrl);
 
 // fetch('https://cataas.com/cat', {
 // })
@@ -39,4 +39,4 @@ getapi(apiUrl);
 
 submitBtn.addEventListener("click", saveKeyWord);
 
-fetch("")
+// fetch ("")

@@ -1,6 +1,9 @@
-* body {
+body {
     height: 100vh;
-    background-color: blueviolet;
+    background-color: beige;
+    position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 header {
