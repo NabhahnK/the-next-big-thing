@@ -13,6 +13,7 @@ function saveKeyWord() {
     if (keyWord.value != "") {
         localStorage.setItem("term", keyWord.value);
         setText();
+        modalActive.classList.remove("is-active");
     }
 }
 
