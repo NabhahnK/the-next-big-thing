@@ -4,9 +4,25 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
+    text-align: center
+}
+
+
+.hero-body{
+border-style: double;
+border-width: 5px;
+border-radius: 5px;
+background-color: antiquewhite;
 }
 
 header {
     height: 100px;
     width: 100%;
+}
+
+.cat-img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 70%
 }
