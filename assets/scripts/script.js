@@ -26,12 +26,12 @@ modalBtn.addEventListener("click", function () {
 
 function randomImg() {
  fetch (apiUrl) 
-    .then(function(Response) {
-        json())}
-    .then(data => console.log(data))
-    .catch(err => console.log("error reading data " + err))
-
-}
+    .then(function(response) {
+        return response.json();
+        })
+    .then(function (data) {
+        console.log(data)
+    })};
 
 
 submitBtn.addEventListener("click", saveKeyWord);
