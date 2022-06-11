@@ -1,5 +1,4 @@
-/* Entire page google font change, top block color indiciation and centered styling */
-
+/* Entire page google font change, entire page color indiciation and centered styling */
 body {
     font-family: 'Bubblegum Sans', cursive;
     font-size: 24px;
@@ -15,6 +14,7 @@ body {
     text-align: center
 }
 
+/* top content block border styling, top block color indiciation */
 .hero-body {
     border-style: double;
     border-width: 5px;
