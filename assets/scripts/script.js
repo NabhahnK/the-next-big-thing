@@ -11,12 +11,13 @@ function setText() {
 
 function saveKeyWord() {
     if (keyWord.value != "") {
-    localStorage.setItem("term", keyWord.value);
-    setText();
+        localStorage.setItem("term", keyWord.value);
+        setText();
+        modalActive.classList.remove("is-active");
     }
 }
 
-modalBtn.addEventListener("click", function() {
+modalBtn.addEventListener("click", function () {
     modalActive.classList.remove("is-active");
 });
 
@@ -30,12 +31,12 @@ modalBtn.addEventListener("click", function() {
 
 // fetch('https://cataas.com/cat', {
 // })
-    // .then(function (responce) {
-        // return responce.json();
-    // })
-    // .then(function (data) {
-        // console.log(data);
-    // })
+// .then(function (responce) {
+// return responce.json();
+// })
+// .then(function (data) {
+// console.log(data);
+// })
 
 submitBtn.addEventListener("click", saveKeyWord);
 
