@@ -23,6 +23,7 @@ body {
     font-size: 30px;
 }
 
+/* this is the cat image that will populate. it will be centered */
 .cat-img {
     display: block;
     margin-left: auto;
