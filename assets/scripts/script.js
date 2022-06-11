@@ -9,8 +9,6 @@ function setText() {
     }
 }
 
-randomImg()
-
 
 function saveKeyWord() {
     if (keyWord.value != "") {
@@ -28,9 +26,9 @@ function randomImg() {
  fetch (apiUrl) 
     .then(function(response) {
         return response.json();
-        })
+     })
     .then(function (data) {
-        console.log(data)
+        console.log(data);
     })};
 
 
