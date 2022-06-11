@@ -30,7 +30,7 @@ body {
     margin-right: auto;
     width: 70%
 }
-
+/* This is the car icon linked via API from flaticon.com it is styled to be centered */
 .cat-icon {
     display: block;
     margin-left: auto;
