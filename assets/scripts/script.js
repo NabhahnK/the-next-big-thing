@@ -12,7 +12,7 @@ function setText() {
     if (localStorage.length != 0) {
         apiCall = apiTwoUrl + "+" + localStorage.getItem("term");
         console.log(apiCall);
-        bookLink.textContent = "cat and" + " " + localStorage.getItem("term") + " book.";
+        bookLink.textContent = "cat and " + localStorage.getItem("term") + " book.";
         randBook()
         document.getElementById("book-link").href = localStorage.getItem("book");;
     } else {
