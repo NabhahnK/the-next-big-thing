@@ -31,4 +31,4 @@ function getapi(apiUrl)
 
 submitBtn.addEventListener("click", saveKeyWord);
 
-fetch ("")
+
