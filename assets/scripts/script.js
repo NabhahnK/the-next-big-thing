@@ -51,11 +51,12 @@ modalBtn.addEventListener("click", function () {
 
 function randomImg() {
  fetch (apiUrl) 
-    .then(function(response) {
+ .then(function(response) {
         return response.json();
      })
     .then(function (data) {
         console.log(data);
+        var i
     })};
 
 
