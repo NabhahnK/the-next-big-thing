@@ -23,11 +23,6 @@ body {
     font-size: 30px;
 }
 
-header {
-    height: 100px;
-    width: 100%;
-}
-
 .cat-img {
     display: block;
     margin-left: auto;
