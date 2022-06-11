@@ -1,6 +1,9 @@
+
+/* Entire page google font change, entire page color indiciation and centered styling */
 body {
-    font-family: 'Bubblegum Sans', cursive;
-    font-size: 24px;
+    font-family: 'Fascinate', cursive;
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
     font-style: normal;
     font-variant: normal;
     font-weight: 700;
@@ -13,26 +16,24 @@ body {
     text-align: center
 }
 
+
+/* top content block border styling, top block color indiciation */
 .hero-body {
     border-style: double;
     border-width: 5px;
     border-radius: 5px;
     background-color: antiquewhite;
-    font-size: 30px;
+    font-size: 20px;
 }
 
-header {
-    height: 100px;
-    width: 100%;
-}
-
+/* this is the cat image that will populate. it will be centered */
 .cat-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 70%
 }
-
+/* This is the car icon linked via API from flaticon.com it is styled to be centered */
 .cat-icon {
     display: block;
     margin-left: auto;
