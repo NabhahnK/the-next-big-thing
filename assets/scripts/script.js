@@ -3,6 +3,7 @@ var modalActive = document.querySelector(".modal");
 var apiUrl = 'https://cataas.com/cat'
 var keyWord = document.getElementById("text-input");
 var submitBtn = document.getElementById("submit-btn");
+var imgLink = document.getElementById("cat-img");
 
 function setText() {
     if (localStorage.length != 0) {
@@ -24,11 +25,12 @@ modalBtn.addEventListener("click", function () {
 
 function randomImg() {
  fetch (apiUrl) 
-    .then(function(response) {
+ .then(function(response) {
         return response.json();
      })
     .then(function (data) {
         console.log(data);
+        var i
     })};
 
 
