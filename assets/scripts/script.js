@@ -1,6 +1,6 @@
 var modalBtn = document.querySelector(".modal-close");
 var modalActive = document.querySelector(".modal");
-var apiUrl = 'https://cataas.com/cat'
+// var apiUrl = 'https://cataas.com/cat'
 var keyWord = document.getElementById("text-input");
 var submitBtn = document.getElementById("submit-btn");
 
@@ -21,8 +21,17 @@ modalBtn.addEventListener("click", function () {
     modalActive.classList.remove("is-active");
 });
 
- fetch('https://cataas.com/cat')
-    .then(res => console.log(res))
+fetch('https://cataas.com/cat') 
+    .then(Response => {
+        if (Response.ok {
+            console.log('SUCCESS')
+        } else {
+            console.log('NOT SUCCESS')
+        }
+    })
+    .then(data => console.log(data))
+    .catch(err => console.log("error reading data " + err))
+
 
 submitBtn.addEventListener("click", saveKeyWord);
 
