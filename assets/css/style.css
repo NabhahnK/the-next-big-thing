@@ -1,4 +1,10 @@
 body {
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
     height: 100vh;
     background-color: beige;
     position: relative;
@@ -7,12 +13,12 @@ body {
     text-align: center
 }
 
-
-.hero-body{
-border-style: double;
-border-width: 5px;
-border-radius: 5px;
-background-color: antiquewhite;
+.hero-body {
+    border-style: double;
+    border-width: 5px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    font-size: 30px;
 }
 
 header {
@@ -21,8 +27,17 @@ header {
 }
 
 .cat-img {
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: 70%
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%
+}
+
+.cat-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 10%;
+    max-height: 10%
+   
 }
