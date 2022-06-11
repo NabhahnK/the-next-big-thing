@@ -20,27 +20,8 @@ modalBtn.addEventListener("click", function() {
     modalActive.classList.remove("is-active");
 });
 
-// function getapi(apiUrl)
-//     responce = fetch(apiUrl)
-//     var data = responce.json();
-//     console.log(data);
-
-
-//     getapi(apiUrl);
-
-// fetch('https://cataas.com/cat', {
-// })
-    // .then(function (responce) {
-        // return responce.json();
-    // })
-    // .then(function (data) {
-        // console.log(data);
-    // })
+ 
+    
 
 submitBtn.addEventListener("click", saveKeyWord);
 
-<<<<<<< HEAD
-
-=======
-// fetch ("")
->>>>>>> 36872d6c58ce8465b3cc151dbe008417fc1f474c
