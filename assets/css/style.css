@@ -33,6 +33,15 @@ body {
     margin-right: auto;
     width: 70%
 }
+.cat-whiskers-icon {
+    
+    max-width: 8%;
+    max-height: 8%;
+    text-align: center;
+}
+
+
+
 /* This is the car icon linked via API from flaticon.com it is styled to be centered */
 .cat-icon {
     display: block;
@@ -40,5 +49,6 @@ body {
     margin-right: auto;
     max-width: 10%;
     max-height: 10%
-   
+
 }
+
