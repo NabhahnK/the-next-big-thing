@@ -1,6 +1,6 @@
 var modalBtn = document.querySelector(".modal-close");
 var modalActive = document.querySelector(".modal");
-var apiUrl = 'https://cataas.com/cat';
+var apiUrl = "https://randomfox.ca/floof/";
 var apiTwoUrl = "http://openlibrary.org/search.json?q=cat";
 var apiCall = "";
 var book = "";
@@ -36,9 +36,20 @@ function randBook() {
     });
 }
 
+function randomImg() {
+    fetch (apiUrl) 
+    .then(function(response) {
+        console.log(response)
+           return response.json();
+        })
+       .then(function (data) {
+           console.log(data);
+        
+       })
+}
 
 function saveKeyWord() {
-    if (keyWord.value != "") {
+    if (keyWord.value !== "") {
         localStorage.setItem("term", keyWord.value);
         setText();
         modalActive.classList.remove("is-active");
@@ -49,16 +60,6 @@ modalBtn.addEventListener("click", function () {
     modalActive.classList.remove("is-active");   
 });
 
-function randomImg() {
- fetch (apiUrl) 
- .then(function(response) {
-        return response.json();
-     })
-    .then(function (data) {
-        console.log(data);
-        var i
-    })};
-
-
+randomImg()
 submitBtn.addEventListener("click", saveKeyWord);
 
