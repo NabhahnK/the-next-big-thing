@@ -30,7 +30,7 @@ function randBook() {
         .then(function (data) {
             var i = Math.floor(Math.random() * (data.docs.length + 1))
             var work = data.docs[i].key;
-            book = "http://openlibrary.org" + work;
+            book = "https://openlibrary.org" + work;
             localStorage.setItem("book", book);
         });
 }
