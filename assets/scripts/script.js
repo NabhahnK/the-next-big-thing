@@ -1,7 +1,7 @@
 var modalBtn = document.querySelector(".modal-close");
 var modalActive = document.querySelector(".modal");
 var apiUrl = 'https://cataas.com/cat';
-var apiTwoUrl = "http://openlibrary.org/search.json?q=cat";
+var apiTwoUrl = "http://openlibrary.org/search.json?q=cat+fox";
 var apiCall = "";
 var book = "";
 var keyWord = document.getElementById("text-input");
@@ -20,7 +20,6 @@ function setText() {
     }
 }
 
-
 function randBook() {
     fetch(apiCall)
     .then(function (response) {
@@ -35,7 +34,6 @@ function randBook() {
         localStorage.setItem("book", book);
     });
 }
-
 
 function saveKeyWord() {
     if (keyWord.value != "") {
