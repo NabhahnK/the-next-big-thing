@@ -1,3 +1,4 @@
+// Set our variables - which includes HTML elements and API links & empty strings
 var modalBtn = document.querySelector(".modal-close");
 var modalActive = document.querySelector(".modal");
 var apiUrl = 'https://randomfox.ca/floof/';
@@ -8,6 +9,7 @@ var keyWord = document.getElementById("text-input");
 var submitBtn = document.getElementById("submit-btn");
 var bookLink = document.getElementById("book-link");
 
+// 
 function setText() {
     if (localStorage.length != 0) {
         apiCall = apiTwoUrl + "+" + localStorage.getItem("term");
