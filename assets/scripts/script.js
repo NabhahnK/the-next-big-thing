@@ -9,7 +9,6 @@ var keyWord = document.getElementById("text-input");
 var submitBtn = document.getElementById("submit-btn");
 var bookLink = document.getElementById("book-link");
 
-// 
 function setText() {
     if (localStorage.length != 0) {
         apiCall = apiTwoUrl + "+" + localStorage.getItem("term");
@@ -37,7 +36,7 @@ function randBook() {
     });
 }
 
-
+// Fetching data from the fox API and using GetElelmentById to select the HTMl element and display the data on the webpage 
 function randomImg() {
     fetch (apiUrl) 
     .then(function(response) {
