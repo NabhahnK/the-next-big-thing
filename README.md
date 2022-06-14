@@ -1,5 +1,7 @@
 # the-next-big-thing
 
+![Floof website](./assets/images/Floof.PNG "Floof website")
+
 # Goal
 To provide Floof content to fox and cat lovers across the globe!
 
