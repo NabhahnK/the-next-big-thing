@@ -11,7 +11,6 @@ var bookLink = document.getElementById("book-link");
 function setText() {
     if (localStorage.length != 0) {
         apiCall = apiTwoUrl + "+" + localStorage.getItem("term");
-        console.log(apiCall);
         bookLink.textContent = "cat, fox and " + localStorage.getItem("term") + " book.";
         randBook()
         document.getElementById("book-link").href = localStorage.getItem("book");;
@@ -22,30 +21,26 @@ function setText() {
 
 function randBook() {
     fetch(apiCall)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (data) {
-        console.log('Open libray Search: Raw data \n----------');
-        console.log(data);
-        var i = Math.floor(Math.random() * (data.docs.length + 1))
-        var work= data.docs[i].key;
-        book = "http://openlibrary.org" + work;
-        localStorage.setItem("book", book);
-    });
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            var i = Math.floor(Math.random() * (data.docs.length + 1))
+            var work = data.docs[i].key;
+            book = "http://openlibrary.org" + work;
+            localStorage.setItem("book", book);
+        });
 }
 
 
 function randomImg() {
-    fetch (apiUrl) 
-    .then(function(response) {
-        console.log(response)
-           return response.json();
+    fetch(apiUrl)
+        .then(function (response) {
+            return response.json();
         })
-       .then(function (data) {
-           console.log(data);
-          document.getElementById("fox-img").src=data.image;
-       })
+        .then(function (data) {
+            document.getElementById("fox-img").src = data.image;
+        })
 
 }
 
@@ -58,7 +53,7 @@ function saveKeyWord() {
 }
 
 modalBtn.addEventListener("click", function () {
-    modalActive.classList.remove("is-active");   
+    modalActive.classList.remove("is-active");
 });
 
 randomImg()
