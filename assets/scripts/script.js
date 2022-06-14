@@ -9,6 +9,7 @@ var keyWord = document.getElementById("text-input");
 var submitBtn = document.getElementById("submit-btn");
 var bookLink = document.getElementById("book-link");
 
+// Changes link text to include the users inputted term
 function setText() {
     if (localStorage.length != 0) {
         apiCall = apiTwoUrl + "+" + localStorage.getItem("term");
@@ -20,7 +21,7 @@ function setText() {
     }
 }
 
-// Fetching a book about cats, foxes & the users term input and returning a link to book
+// Fetching a book about cats, foxes & the users inputted term and returning a link to book
 function randBook() {
     fetch(apiCall)
         .then(function (response) {
