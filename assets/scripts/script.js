@@ -12,7 +12,7 @@ function setText() {
     if (localStorage.length != 0) {
         apiCall = apiTwoUrl + "+" + localStorage.getItem("term");
         console.log(apiCall);
-        bookLink.textContent = "cat and" + " " + localStorage.getItem("term") + " book.";
+        bookLink.textContent = "cat and " + localStorage.getItem("term") + " book.";
         randBook()
         document.getElementById("book-link").href = localStorage.getItem("book");;
     } else {
@@ -44,26 +44,19 @@ function saveKeyWord() {
 }
 
 modalBtn.addEventListener("click", function () {
-    modalActive.classList.remove("is-active");
+    modalActive.classList.remove("is-active");   
 });
 
-// function getapi(apiUrl)
-//     responce = fetch(apiUrl)
-//     var data = responce.json();
-//     console.log(data);
+function randomImg() {
+ fetch (apiUrl) 
+ .then(function(response) {
+        return response.json();
+     })
+    .then(function (data) {
+        console.log(data);
+        var i
+    })};
 
-
-//     getapi(apiUrl);
-
-// fetch('https://cataas.com/cat', {
-// })
-// .then(function (responce) {
-// return responce.json();
-// })
-// .then(function (data) {
-// console.log(data);
-// })
 
 submitBtn.addEventListener("click", saveKeyWord);
 
-// fetch ("")
