@@ -42,14 +42,13 @@ body {
 }
 
 
-
 /* This is the cat icon linked via API from flaticon.com it is styled to be centered */
 .cat-icon {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 7%;
-    max-height: 7%
+    max-width: 11%;
+    max-height: 11%
 
 }
 
@@ -57,6 +56,6 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 10%;
-    max-height: 10%
+    max-width: 12.5%;
+    max-height: 12.5%
 }
