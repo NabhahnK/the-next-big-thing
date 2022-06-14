@@ -1,6 +1,6 @@
 var modalBtn = document.querySelector(".modal-close");
 var modalActive = document.querySelector(".modal");
-var apiUrl = 'https://cataas.com/cat';
+var apiUrl = 'https://randomfox.ca/floof/';
 var apiTwoUrl = "http://openlibrary.org/search.json?q=cat+fox";
 var apiCall = "";
 var book = "";
