@@ -56,6 +56,7 @@ function saveKeyWord() {
     }
 }
 
+// Turns off the modal
 modalBtn.addEventListener("click", function () {
     modalActive.classList.remove("is-active");
 });
