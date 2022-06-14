@@ -1,4 +1,3 @@
-
 /* Entire page google font change, entire page color indiciation and centered styling */
 body {
     font-family: 'Fascinate', cursive;
@@ -35,7 +34,7 @@ body {
 
 /* this is the fox icon from flaticon.com */
 .cat-whiskers-icon {
-    
+
     max-width: 6%;
     max-height: 6%;
     text-align: center;
@@ -49,7 +48,6 @@ body {
     margin-right: auto;
     max-width: 11%;
     max-height: 11%
-
 }
 
 .fox-icon {
