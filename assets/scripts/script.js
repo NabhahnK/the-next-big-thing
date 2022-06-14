@@ -61,6 +61,7 @@ modalBtn.addEventListener("click", function () {
     modalActive.classList.remove("is-active");
 });
 
+// Calling randomImg function; when user clicks "submit", run saveKeyWord function
 randomImg()
 submitBtn.addEventListener("click", saveKeyWord);
 
