@@ -7,6 +7,7 @@ var book = "";
 var keyWord = document.getElementById("text-input");
 var submitBtn = document.getElementById("submit-btn");
 var bookLink = document.getElementById("book-link");
+var foxImage = document.getElementById("fox-img").src="newSource.png";
 
 function setText() {
     if (localStorage.length != 0) {
@@ -47,6 +48,9 @@ function randomImg() {
         
        })
 }
+
+function displayImg
+
 
 function saveKeyWord() {
     if (keyWord.value !== "") {
