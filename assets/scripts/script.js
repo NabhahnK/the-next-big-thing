@@ -7,7 +7,7 @@ var book = "";
 var keyWord = document.getElementById("text-input");
 var submitBtn = document.getElementById("submit-btn");
 var bookLink = document.getElementById("book-link");
-var foxImage = document.getElementById("fox-img").src="newSource.png";
+var foxImage = document.getElementById("fox-img").src="https://randomfox.ca/floof/"
 
 function setText() {
     if (localStorage.length != 0) {
@@ -44,13 +44,11 @@ function randomImg() {
            return response.json();
         })
        .then(function (data) {
+           randomImg.innerText = data
            console.log(data);
-        
        })
+
 }
-
-function displayImg
-
 
 function saveKeyWord() {
     if (keyWord.value !== "") {
