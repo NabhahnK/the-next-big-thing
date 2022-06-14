@@ -35,6 +35,7 @@ function randBook() {
     });
 }
 
+
 function randomImg() {
     fetch (apiUrl) 
     .then(function(response) {
