@@ -1,3 +1,4 @@
+// Set our variables - which includes HTML elements and API links & empty strings
 var modalBtn = document.querySelector(".modal-close");
 var modalActive = document.querySelector(".modal");
 var apiUrl = 'https://randomfox.ca/floof/';
@@ -8,6 +9,7 @@ var keyWord = document.getElementById("text-input");
 var submitBtn = document.getElementById("submit-btn");
 var bookLink = document.getElementById("book-link");
 
+// Changes link text to include the users inputted term
 function setText() {
     if (localStorage.length != 0) {
         apiCall = apiTwoUrl + "+" + localStorage.getItem("term");
@@ -19,6 +21,7 @@ function setText() {
     }
 }
 
+// Fetching a book about cats, foxes & the users inputted term and returning a link to book
 function randBook() {
     fetch(apiCall)
         .then(function (response) {
@@ -32,7 +35,7 @@ function randBook() {
         });
 }
 
-
+// Fetching data from the fox API and using GetElelmentById to select the HTMl element and display the data on the webpage 
 function randomImg() {
     fetch(apiUrl)
         .then(function (response) {
@@ -44,6 +47,7 @@ function randomImg() {
 
 }
 
+// Gets the users term and saves to the local storage
 function saveKeyWord() {
     if (keyWord.value !== "") {
         localStorage.setItem("term", keyWord.value);
@@ -52,10 +56,12 @@ function saveKeyWord() {
     }
 }
 
+// Turns off the modal
 modalBtn.addEventListener("click", function () {
     modalActive.classList.remove("is-active");
 });
 
+// Calling randomImg function; when user clicks "submit", run saveKeyWord function
 randomImg()
 submitBtn.addEventListener("click", saveKeyWord);
 
