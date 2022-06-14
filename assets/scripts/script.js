@@ -50,6 +50,7 @@ function randomImg() {
 
 }
 
+// Gets the users term and saves to the local storage
 function saveKeyWord() {
     if (keyWord.value !== "") {
         localStorage.setItem("term", keyWord.value);
