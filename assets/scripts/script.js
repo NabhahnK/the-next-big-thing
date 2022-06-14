@@ -1,7 +1,7 @@
 var modalBtn = document.querySelector(".modal-close");
 var modalActive = document.querySelector(".modal");
-var apiUrl = "https://randomfox.ca/floof/";
-var apiTwoUrl = "http://openlibrary.org/search.json?q=cat";
+var apiUrl = 'https://cataas.com/cat';
+var apiTwoUrl = "http://openlibrary.org/search.json?q=cat+fox";
 var apiCall = "";
 var book = "";
 var keyWord = document.getElementById("text-input");
@@ -12,14 +12,13 @@ function setText() {
     if (localStorage.length != 0) {
         apiCall = apiTwoUrl + "+" + localStorage.getItem("term");
         console.log(apiCall);
-        bookLink.textContent = "cat and " + localStorage.getItem("term") + " book.";
+        bookLink.textContent = "cat, fox and " + localStorage.getItem("term") + " book.";
         randBook()
         document.getElementById("book-link").href = localStorage.getItem("book");;
     } else {
-        bookLink.textContent = "cat book."
+        bookLink.textContent = "cat and fox book."
     }
 }
-
 
 function randBook() {
     fetch(apiCall)
