@@ -20,6 +20,7 @@ function setText() {
     }
 }
 
+// Fetching a book about cats, foxes & the users term input and returning a link to book
 function randBook() {
     fetch(apiCall)
         .then(function (response) {
