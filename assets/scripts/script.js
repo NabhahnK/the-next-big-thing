@@ -2,7 +2,7 @@
 var modalBtn = document.querySelector(".modal-close");
 var modalActive = document.querySelector(".modal");
 var apiUrl = 'https://randomfox.ca/floof/';
-var apiTwoUrl = "http://openlibrary.org/search.json?q=cat+fox";
+var apiTwoUrl = "https://openlibrary.org/search.json?q=cat+fox";
 var apiCall = "";
 var book = "";
 var keyWord = document.getElementById("text-input");
@@ -30,7 +30,7 @@ function randBook() {
         .then(function (data) {
             var i = Math.floor(Math.random() * (data.docs.length + 1))
             var work = data.docs[i].key;
-            book = "http://openlibrary.org" + work;
+            book = "https://openlibrary.org" + work;
             localStorage.setItem("book", book);
         });
 }
