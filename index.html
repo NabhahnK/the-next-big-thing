@@ -12,10 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Righteous&display=swap" rel="stylesheet">
     <!-- cat icon linked source -->
-    <link href="https://www.flaticon.com/free-icons/cat" title="cat icons">Cat icon and fox icon created by Smashicons
-    and whisker
-    icon created by Freepik -
-    Flaticon</a>
+    <link href="https://www.flaticon.com/free-icons/cat" title="cat icons">
+    </a>
     <a href="https://www.flaticon.com/free-icons/nose" title="nose icons"></a>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>FLOOF CORNER</title>
@@ -23,29 +21,32 @@
 
 <body>
 
-    <div class="modal is-active">
+        <div class="modal is-active">
 
-        <div class="modal-background"></div>
+            <div class="modal-background"></div>
 
-        <div class="modal-content">
+            <div class="modal-content">
 
-            <div class="box">
+                <div class="box">
 
-                <p>Enter a search term to find books about cats or foxes.</p>
 
-                <input id="text-input" class="input" type="text" placeholder="Pirates/Kingdoms/SpaceShip">
+                    <p>Enter a search term to find books about cats or foxes.</p>
 
-                <div class="field is-grouped">
+                    <input id="text-input" class="input" type="text" placeholder="Pirates/Kingdoms/SpaceShip">
 
-                    <div class="control">
+                    <div class="field is-grouped">
 
-                        <button id="submit-btn" class="button is-link">Submit</button>
+                        <div class="control">
 
-                    </div>
+                            <button id="submit-btn" class="button is-link">Submit</button>
 
-                    <div class="control">
+                        </div>
 
-                        <button class="button is-link is-light">Cancel</button>
+                        <div class="control">
+
+                            <button class="button is-link is-light">Cancel</button>
+
+                        </div>
 
                     </div>
 
@@ -53,55 +54,70 @@
 
             </div>
 
-        </div>
-
-        <button class="modal-close is-large" aria-label="close"></button>
-
-    </div>
-
-    <section class="hero">
-
-        <div class="hero-body">
-
-            <p class="title">
-
-                FLOOF CORNER
-                <img src="./assets/happy.png" alt="cute kitty icon" Title="Cute Cat Icon" class="cat-icon">
-
-            </p>
-
-            <p class="subtitle">
-
-                <br> “Cats are connoisseurs of comfort.” – James Herriot. <br />
-                <br> “Foxes are my therapy.” – Paula Cole <br />
-
-            </p>
-            <p>
-                <img src="./assets/fox.png" alt="cute fox icon" Title="cute fox icon" class="fox-icon">
-            </p>
-        </div>
-
-    </section>
-
-    <main>
-
-        <div class="fox-output-content">
-            <img id="fox-img" src="https://via.placeholder.com/150">
-
-            <p>
-                Click this link to see your random <a id="book-link" href="http://openlibrary.org/search.json?q=cat">cat
-                    or fox book!</a>
-            </p>
-            <img src="./assets/cat-whiskers.png" alt="cat whiskers" class="cat-whiskers-icon">
-            <p>
-
-                Thanks for visiting!
-            </p>
+            <button class="modal-close is-large" aria-label="close"></button>
 
         </div>
-    </main>
 
-    <script src="./assets/scripts/script.js"></script>
+        <!-- is-primary is a color place holder until color is decided -->
+        <section class="hero">
+            <div class="topnav">
+                <a>Home</a>
+                <a>News</a>
+                <a>Contact</a>
+                <a>About</a>
+            </div>
+
+            <div class="hero-body">
+
+
+                <p class="title">
+
+
+                    FLOOF CORNER
+                    <img src="./assets/happy.png" alt="cute kitty icon" Title="Cute Cat Icon" class="cat-icon">
+
+                </p>
+
+                <p class="subtitle">
+
+
+                    <br> “Cats are connoisseurs of comfort.” – James Herriot. <br />
+                    <br> “Foxes are my therapy.” – Paula Cole <br />
+
+                </p>
+                <p>
+                    <img src="./assets/fox.png" alt="cute fox icon" Title="cute fox icon" class="fox-icon">
+                </p>
+            </div>
+
+
+        </section>
+
+        <main>
+
+            <div class="fox-output-content">
+                <img id="fox-img" src="https://via.placeholder.com/150">
+
+                <p>
+                    Click this link to see your random <a id="book-link"
+                        href="http://openlibrary.org/search.json?q=cat">cat or fox book!</a>
+                </p>
+                <img src="./assets/cat-whiskers.png" alt="cat whiskers" class="cat-whiskers-icon">
+                <p>
+
+                    Thanks for visiting!
+                </p>
+
+
+                <p class="icon-credit-text">
+                    Cat icon and fox icon created by Smashicons and whisker
+                    icon created by Freepik - Flaticon
+                </p>
+
+            </div>
+        </main>
+
+        <script src="./assets/scripts/script.js"></script>
 
 </body>
 

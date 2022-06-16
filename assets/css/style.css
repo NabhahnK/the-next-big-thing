@@ -1,3 +1,4 @@
+
 /* Entire page google font change, entire page color indiciation and centered styling */
 body {
     font-family: 'Fascinate', cursive;
@@ -14,6 +15,14 @@ body {
     text-align: center
 }
 
+/* Top navigation bar styling */
+.topnav {
+    color: black;
+    font-size: 25px;
+    padding: 30px;
+}
+
+    
 
 /* top content block border styling, top block color indiciation */
 .hero-body {
